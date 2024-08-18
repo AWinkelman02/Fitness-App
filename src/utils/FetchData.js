@@ -5,7 +5,7 @@ export const exerciseParams = {
 	hostname: 'exercise-db-fitness-workout-gym.p.rapidapi.com',
 	port: null,
 	headers: {
-		'x-rapidapi-key': env.RAPID_API_KEY,
+		'x-rapidapi-key': process.env.RAPID_API_KEY,
 		'x-rapidapi-host': 'exercise-db-fitness-workout-gym.p.rapidapi.com',
 	}
 };
