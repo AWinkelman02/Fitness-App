@@ -6,10 +6,10 @@
 
 :root{
   --background: #060a0c;
-  --text: #e1e8ea;
+  --text: rgb(225, 232, 234);
   --primary: rgb(156, 206, 224);
   --primary2: hsla(195, 52%, 75%, 0.103);
-  --secondary: #196c8a;
+  --secondary: rgb(25, 108, 138);
   --accent: #35bff0;
 }
 
