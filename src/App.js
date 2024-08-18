@@ -15,7 +15,7 @@ const App = () => {
     <Box width="400px" sx={{ width: { xl: '1488px' }}} m='auto' >
         <NavigationBar/>
         <Routes>
-            <Route path="/Fitness-App" element={ <Home /> } />
+            <Route path="/" element={ <Home /> } />
             <Route path="/exercises/:id" element={ <ExerciseDetail /> } />
         </Routes>
     </Box>

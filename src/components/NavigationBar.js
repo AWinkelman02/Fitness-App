@@ -11,8 +11,8 @@ const NavigationBar = () => {
             <img src={Logo} alt='logo' style={{width: '48px', height: '48px', margin: '0 20px' }} />
         </Link>
         <Stack direction='row' gap='40px' fontSize='24px' alignItems='flex-end' >
-            <Link to='/Fitness-App' style={{textDecoration: 'none', color:'#e1e8ea', borderBottom: '3px solid #35bff0', fontFamily: 'Josefin Sans' }} >Home</Link>
-            <a href='/Fitness-App/#exercises' style={{textDecoration: 'none', color:'#e1e8ea', borderBottom: '3px solid rgba(0, 0, 0, 0)' }}  >Exercises</a>
+            <Link to='/' style={{textDecoration: 'none', color:'#e1e8ea', borderBottom: '3px solid #35bff0', fontFamily: 'Josefin Sans' }} >Home</Link>
+            <a href='/#exercises' style={{textDecoration: 'none', color:'#e1e8ea', borderBottom: '3px solid rgba(0, 0, 0, 0)' }}  >Exercises</a>
         </Stack>
     </Stack>
   )
