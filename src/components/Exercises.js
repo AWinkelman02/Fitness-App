@@ -34,12 +34,13 @@ const Exercises = ({ setExercises, muscle, exercises }) => {
     },
   });
   
-  const paginate = (value) => {
+  const paginate = (e, value) => {
+    console.log(value)
     setCurrentPage(value);
     window.scrollTo({ top: 1300, behavior: 'smooth' })
   }
 
-  useEffect(() => { // eslint-disable-line
+  useEffect(() => {
     const fetchExercisesData = async () => {
       let exerciseD = [];
       
@@ -65,7 +66,7 @@ const Exercises = ({ setExercises, muscle, exercises }) => {
             <ThemeProvider theme={theme}>
               <Pagination
                 color='primary' defaultPage={1} count={Math.ceil(exercises.length / exercisesPerPage)} 
-                page={currentPage} onChange={paginate} size='large'/>
+                onChange={paginate} size='large'/>
             </ThemeProvider>
           )}
       </Stack>
