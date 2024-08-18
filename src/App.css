@@ -1,8 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+:root{
+  --background: #060a0c;
+  --text: #e1e8ea;
+  --primary: rgb(156, 206, 224);
+  --primary2: hsla(195, 52%, 75%, 0.103);
+  --secondary: #196c8a;
+  --accent: #35bff0;
+}
+
 body {
-    font-family: 'Josefin Sans';
-    background-color: #FFFAFB;
-  }
-  
+  font-family: "Josefin Sans", sans-serif;
+  background-color: var(--background);
+  margin: 0;
+}
+
   * {
     padding: 0px;
     margin: 0px;
@@ -23,7 +39,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #FF2625;
+    color: blue;
     font-size: 25px;
     border-radius: 4px;
     position: absolute;
@@ -51,6 +67,7 @@ body {
   .detail-image {
     width: 729px;
     height: 742px;
+    object-fit: cover;
   }
   
   .hero-banner-img {
@@ -60,22 +77,41 @@ body {
     width: 700px;
     height: 900px;
     margin-top: -330px;
-  
+    border-bottom-left-radius: 200px;
+  }
+
+  .ecard{
+    background-color: var(--primary2);
   }
   
   .exercise-card {
     width: 400px;
-    height: 445px;
-    background: #fff;
-    border-top: 4px solid #FF2625;
-    border-bottom-left-radius: 20px;
+    height: 525px;
     text-decoration: none;
+    padding-bottom: 10px;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-    padding-bottom: 10px;
-    transform: scale(1, 1);
-    transition: 0.3s all ease-in-out;
+  }
+
+  .lnk{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+
+  .primary{
+    font-family: 'Josefin Sans';
+    background-color: var(--primary);
+    padding: 25px;
+  }
+
+  .search-filters{
+    width: 50vw;
+    display: flex;
+    padding: 20px;
+    justify-content: center;
+    gap: 30px;
   }
   
   .exercise-card img {
@@ -85,17 +121,15 @@ body {
   .bodyPart-card {
     transform: scale(1, 1);
     transition: 0.3s all ease-in-out;
+    background-color: var(--primary2);
+
   }
   
-  .exercise-card:hover,
+  .ecard:hover,
   .bodyPart-card:hover {
     transform: scale(1.1, 1.1);
   }
   
-  .search-btn:hover {
-    color: #FF2625 !important;
-    border: 1px solid #FF2625 !important;
-  }
   
   .exercise-video {
     display: flex;
@@ -105,11 +139,22 @@ body {
     height: 381px;
     text-decoration: none;
   }
+
+  .pagination {
+    color: var(--text);
+    background-color: var(--primary);
+  }
+
+  .github-icon{
+    width: 50px;
+    height: auto;
+  }
   
   @media screen and (max-width:1200px) {
     .detail-image {
       width: 300px;
       height: 300px;
+      object-fit: cover;
     }
   
   
@@ -134,7 +179,6 @@ body {
       width: 320px;
       height: 300px;
     }
-  
   }
   
   @media screen and (max-width:400px) {
