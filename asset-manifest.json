@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/Fitness-App/static/css/main.732b12fd.css",
+    "main.js": "/Fitness-App/static/js/main.df999d04.js",
+    "static/media/banner.jpg": "/Fitness-App/static/media/banner.2b69acae21c7a872ccdc.jpg",
+    "static/media/equipment.png": "/Fitness-App/static/media/equipment.2f915a181e11df9fa004.png",
+    "static/media/target.png": "/Fitness-App/static/media/target.cd7f1c23158ba2c2886e.png",
+    "static/media/Logo.png": "/Fitness-App/static/media/Logo.c5af7d92d3da261b0884.png",
+    "static/media/body-part.png": "/Fitness-App/static/media/body-part.3ef75d26b0b2c9849202.png",
+    "static/media/github.png": "/Fitness-App/static/media/github.0a74bc20de58f9b2eec9.png",
+    "index.html": "/Fitness-App/index.html",
+    "main.732b12fd.css.map": "/Fitness-App/static/css/main.732b12fd.css.map",
+    "main.df999d04.js.map": "/Fitness-App/static/js/main.df999d04.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.732b12fd.css",
+    "static/js/main.df999d04.js"
+  ]
+}
